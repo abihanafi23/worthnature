@@ -1,0 +1,169 @@
+/* Global Setting */
+html {
+    overflow-x: hidden;
+    margin: -10px;
+    color: white;
+    font-family: 'Marxiana';
+}
+
+@font-face {
+    font-family: 'Marxiana';
+    src: url('../fonts/TTMarxianaTrialElzevir.ttf');
+}
+
+.container {
+    padding-inline: 10%;
+}
+
+.half-container {
+    width: 50%;
+}
+
+.mt50px {
+    margin-top: 50px;
+}
+
+.mt100px {
+    margin-top: 100px;
+}
+
+/* Section 1 */
+.container-header {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-title a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #3D3E2B;
+}
+
+.container-header a img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.container-header nav a {
+    color: #3D3E2B;
+    margin-inline: 10px;
+    text-decoration: none;
+}
+
+.web-title {
+    font-family: 'Agbalumo';
+    font-size: 24px;
+}
+
+.carousel-container {
+    background-image: url('../image/bg1.jpg');
+    background-repeat: none;
+    background-size: cover;
+    width: 100%;
+    height: 720px;
+}
+
+.carousel-content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.carousel-desc-container {
+    height: 600px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.carousel-desc-text h3 {
+    font-size: 72px;
+    font-weight: 300;
+    margin-bottom: -20px;
+}
+
+.carousel-desc-text p {
+    margin-left: 5px;
+    font-size: 24px;
+}
+
+.social-bar {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.social-bar a {
+    margin-inline: 10px;
+}
+
+.social-bar a img {
+    width: 16px;
+}
+
+/* Section 2 */
+.brown-container {
+    background-color: #FFF9E2;
+    padding: 1%;
+    font-size: 12px;
+}
+
+.inner-brown-container {
+    color: #3D3E2B;
+    text-align: justify;
+    padding: 10px;
+    display: flex;
+}
+
+.brown-container-header {
+    color: #3D3E2B;
+    margin-bottom: -0.5px;
+    padding: 5px;
+}
+
+.brown-container a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #3D3E2B;
+}
+
+/* Responsive */
+@media only screen and (max-width:885px) {
+    .carousel-container {
+        height: fit-content;
+        padding-bottom: 10pt;
+    }
+
+    .container {
+        padding-inline: 5%;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 14px;
+    }
+
+    .container-header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .carousel-content {
+        flex-wrap: wrap;
+    }
+
+    .inner-brown-container {
+        flex-wrap: wrap;
+    }
+
+    .half-container {
+        width: 100%;
+    }
+
+    .half-container hr {
+        width: 100%;
+    }
+}
