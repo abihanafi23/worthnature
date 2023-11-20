@@ -129,6 +129,30 @@ html {
     color: #3D3E2B;
 }
 
+.section-three-container {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.section-three-container img {
+    margin-left: -100px;
+    height: 400px;
+}
+
+.trapesium {
+    z-index: 1;
+    position: relative;
+    width: 60vw;
+    border-top: 400px solid #3D3E2B;
+    border-right: 100px solid transparent;
+}
+
+.trapesium-content {
+    margin-top: -300px;
+    color: white;
+}
+
 /* Responsive */
 @media only screen and (max-width:885px) {
     .carousel-container {
