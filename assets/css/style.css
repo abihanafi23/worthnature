@@ -149,8 +149,27 @@ html {
 }
 
 .trapesium-content {
-    margin-top: -300px;
+    margin-top: -350px;
     color: white;
+}
+
+.description-medium {
+    font-size: 52px;
+}
+
+.description-small {
+    font-size: 18px;
+}
+
+.btn-small {
+    cursor: pointer;
+    margin-top: 20px;
+    border: none;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Marxiana';
+    border-radius: 20px;
+    padding: 10px 30px;
 }
 
 /* Responsive */
