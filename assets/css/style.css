@@ -149,12 +149,6 @@ html {
 }
 
 .trapesium-content {
-<<<<<<< HEAD
-    margin-top: -300px;
-    color: white;
-}
-
-=======
     margin-top: -350px;
     color: white;
 }
@@ -178,7 +172,6 @@ html {
     padding: 10px 30px;
 }
 
->>>>>>> 9f3e57b0bfc7c0ace89c7e41f26cc16f2408074f
 /* Responsive */
 @media only screen and (max-width:885px) {
     .carousel-container {
