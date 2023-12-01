@@ -13,36 +13,107 @@
 
 <body>
     <!-- Section 1 -->
-    <div class="carousel-container">
-        <div class="container">
-            <!-- Header -->
-            <div class="container-header">
-                <div class="container-title">
-                    <a href="">
-                        <img src="assets/icon/site-icon.png" alt="" srcset="">
-                        <h1 class="web-title">WorthNature</h1>
-                    </a>
-                </div>
-
-                <nav>
-                    <a href="">Beranda</a>
-                    <a href="">Dampak</a>
-                    <a href="">Aksi Kami</a>
-                    <a href="">Donasi</a>
-                    <a href="">Tentang Kami</a>
-                </nav>
+    <!-- Header -->
+    <div class="container relative">
+        <div class="container-header">
+            <div class="container-title">
+                <a href="">
+                    <img src="assets/icon/site-icon.png" alt="" srcset="">
+                    <h1 class="web-title">WorthNature</h1>
+                </a>
             </div>
 
-            <!-- Desc Carousel -->
-            <div class="carousel-content">
-                <div class="carousel-desc-container">
+            <nav>
+                <a href="">Beranda</a>
+                <a href="">Dampak</a>
+                <a href="">Aksi Kami</a>
+                <a href="">Donasi</a>
+                <a href="">Tentang Kami</a>
+            </nav>
+        </div>
+    </div>
+
+
+    <div class="slider">
+        <div class="carousel-container">
+            <!-- radio button start -->
+            <input type="radio" name="radio-btn" id="radio1" checked>
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <!-- Radio Button End -->
+
+            <!-- Slides Images Start-->
+            <div class="slide first">
+                <img src="assets/image/bg1.jpg" alt="" srcset="">
+                <div class="container mt-400px absolute">
                     <div class="carousel-desc-text">
                         <h3>Cintai Diri<br>Bersama Alam<br></h3>
                         <p>Mulai jaga alam dari kini</p>
                     </div>
                 </div>
+            </div>
 
-                <!-- Social Bar -->
+            <div class="slide">
+                <!-- <div class="white-container"></div> -->
+                <img src="assets/image/bg2.jpg" alt="" srcset="">
+                <div class="container mt-400px absolute">
+                    <div class="carousel-desc-text">
+                        <h3>Muncul Secara<br>Ajaib dengan Keindahannya<br></h3>
+                        <p>Aurora Borealis</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="assets/image/bg3.png" alt="" srcset="">
+                <div class="container mt-400px absolute">
+                    <div class="carousel-desc-text">
+                        <h3>Keindahan Tersembunyi<br>di Balik Biru Laut<br></h3>
+                        <p>Hentikan penggunaan bom dan jangkar sejak dini</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Slides Images End -->
+
+            <!-- automatic navigation start -->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+            <!-- automatic navigation end -->
+
+            <!-- <div class="container"> -->
+            <!-- Desc Carousel -->
+            <!-- <div class="carousel-content">
+                <div class="carousel-desc-container">
+                    <div class="carousel-desc-text">
+                        <h3>Cintai Diri<br>Bersama Alam<br></h3>
+                        <p>Mulai jaga alam dari kini</p>
+                    </div>
+                </div> -->
+
+            <!-- Social Bar -->
+            <!-- <div class="social-bar">
+                    <a href=""><img src="assets/icon/tik-tok.png" alt=""></a>
+
+                    <a href=""><img src="assets/icon/facebook.png" alt=""></a>
+
+                    <a href=""><img src="assets/icon/instagram.png" alt=""></a>
+                </div>
+            </div> -->
+            <!-- </div> -->
+        </div>
+        <!-- manual navigation start -->
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
+        <!-- manual navigation end -->
+
+        <div class="social">
+            <div class="container">
                 <div class="social-bar">
                     <a href=""><img src="assets/icon/tik-tok.png" alt=""></a>
 
@@ -69,7 +140,6 @@
                         keindahan laut yang ada di Indonesia.
                     </p>
                 </div>
-
             </div>
 
             <div class="container half-container">
@@ -118,6 +188,20 @@
             <img src="assets/image/manfaat-berkebun-dan-memelihara-tanaman-bagi-kesehatan.jpg" alt="" srcset="">
         </div>
     </div>
+
+    <!-- Section 4 -->
+
+
+    <script>
+        var counter = 1;
+        setInterval(() => {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 3) {
+                counter = 1;
+            }
+        }, 5000);
+    </script>
 </body>
 
 </html>
