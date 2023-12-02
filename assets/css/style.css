@@ -1,13 +1,17 @@
 /* Global Setting */
+@font-face {
+    font-family: 'Marxiana';
+    src: url('../fonts/TTMarxianaTrialElzevir.ttf');
+}
+
+html {
+    font-family: 'Marxiana';
+}
+
 body {
     margin: 0px;
     scroll-behavior: smooth;
     overflow-x: hidden;
-}
-
-@font-face {
-    font-family: 'Marxiana';
-    src: url('../fonts/TTMarxianaTrialElzevir.ttf');
 }
 
 .container {
@@ -26,22 +30,26 @@ body {
     margin-top: 100px;
 }
 
+.pd-bt30px {
+    padding-bottom: 30px;
+}
+
+.pd-bt50px {
+    padding-bottom: 100px;
+}
+
 .relative {
     position: relative;
     z-index: 1;
 }
 
-.mt-450px {
-    margin-top: -450px;
+.mt-400px {
+    margin-top: -400px;
 }
 
 .absolute {
     position: absolute;
     z-index: 1;
-}
-
-.mt-400px {
-    margin-top: -400px;
 }
 
 /* Section 1 */
@@ -110,7 +118,7 @@ body {
     width: 100vw;
     margin-top: -40px;
     display: flex;
-    justify-content: center ;
+    justify-content: center;
 }
 
 .manual-btn {
@@ -128,16 +136,16 @@ body {
 .manual-btn:hover {
     background-color: #3D3E2B;
 }
-    
-#radio1:checked ~ .first {
+
+#radio1:checked~.first {
     margin-left: 0;
 }
 
-#radio2:checked ~ .first {
+#radio2:checked~.first {
     margin-left: -20%;
 }
 
-#radio3:checked ~ .first {
+#radio3:checked~.first {
     margin-left: -40%;
 }
 
@@ -158,21 +166,22 @@ body {
     transition: 1s;
 }
 
-.navigation-auto div:not(:last-child){
+.navigation-auto div:not(:last-child) {
     margin-right: 10px;
 }
 
-#radio1:checked ~ .navigation-auto .auto-btn1{
+#radio1:checked~.navigation-auto .auto-btn1 {
     background: #3D3E2B;
 }
 
-#radio2:checked ~ .navigation-auto .auto-btn2{
+#radio2:checked~.navigation-auto .auto-btn2 {
     background: #3D3E2B;
 }
 
-#radio3:checked ~ .navigation-auto .auto-btn3{
+#radio3:checked~.navigation-auto .auto-btn3 {
     background: #3D3E2B;
 }
+
 /* Navigation ends */
 
 .white-container {
@@ -244,6 +253,7 @@ body {
     color: #3D3E2B;
 }
 
+/* Section Three */
 .section-three-container {
     display: flex;
     justify-content: center;
@@ -287,6 +297,81 @@ body {
     padding: 10px 30px;
 }
 
+/* Section 4 */
+.section-title {
+    font-size: 24px;
+}
+
+.aksi-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.inner-aksi-container {
+    margin-inline: 5%;
+    text-align: center;
+}
+
+.windowed-image {
+    width: 200px;
+    height: 300px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+/* Section 5 */
+.section-five-container {
+    background-color: grey;
+    height: 250px;
+    width: 100vw;
+    padding: 20px 0px 50px 0px;
+}
+
+.sfc-desc {
+    font-size: 20px;
+}
+
+.sfc-num {
+    margin-top: -20px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #FFF9E2;
+}
+
+/* Section 6 */
+.circle-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+}
+
+.job-title {
+    margin-top: -20px;
+}
+
+/* Section 7 */
+.dark-green-container {
+    background-color: #3D3E2B;
+    padding: 50px 0px 10px 0px;
+    color: white;
+}
+
+.footer-title {
+    font-size: 16px;
+    margin-bottom: -5px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: white;
+}
+
 /* Responsive */
 @media only screen and (max-width:885px) {
     .container {
@@ -307,10 +392,6 @@ body {
 
     .container-title {
         margin-inline: 10%;
-    }
-
-    .white-container {
-        height: 150px;
     }
 
     .carousel-content {
