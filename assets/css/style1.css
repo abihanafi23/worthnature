@@ -7,7 +7,7 @@ body {
     background-color: #e528283e;
   }
 .about-section{
-     background-color: rgba(58, 154, 69, 0.756);
+     background-color: rgba(45, 110, 53, 0.625);
      padding: 5%;
      width: 100%;
      display: flex;
@@ -30,11 +30,11 @@ body {
     height: 7px;
     display: block;
     margin: 0 auto;
-    background-color: rgba(214, 213, 214, 0.314);
+    background-color: rgba(22, 22, 22, 0.314);
 }
 .about-section p{
     font-size: 20px;
-    color: #666;
+    color: #00000066656;
     margin-bottom: 35px;
 }
   html {
@@ -55,6 +55,7 @@ body {
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.549);
     margin: 8px;
+    padding: 10px;
   }  
   .container{
     width: 85%;
@@ -64,9 +65,9 @@ body {
   .text-align{
     padding: 5%;
     width: 100%;
-    font-size: larger;
+    font-size: 20px;
     text-align: center;
-    background: rgba(58, 154, 69, 0.756);
+    background: rgba(45, 110, 53, 0.625);
   }
   .about{
     display: flex;
@@ -119,7 +120,7 @@ body {
     outline: 0;
     display: inline-block;
     padding: 8px;
-    color: white;
+    color: rgba(255, 255, 255, 0.703);
     background-color: #000;
     text-align: center;
     cursor: pointer;
