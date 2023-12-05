@@ -95,11 +95,11 @@
         <div class="social">
             <div class="container">
                 <div class="social-bar">
-                    <a href="#"><img src="assets/icon/tik-tok.png" alt=""></a>
+                    <button onclick="scrollFormulir()" href="#"><img src="assets/icon/tik-tok.png" alt=""></button>
 
-                    <a href="#"><img src="assets/icon/facebook.png" alt=""></a>
+                    <button onclick="scrollFormulir()" href="#"><img src="assets/icon/facebook.png" alt=""></button>
 
-                    <a href="#"><img src="assets/icon/instagram.png" alt=""></a>
+                    <button onclick="scrollFormulir()" href="#"><img src="assets/icon/instagram.png" alt=""></button>
                 </div>
             </div>
         </div>
@@ -178,22 +178,20 @@
 
             <div class="aksi-container">
                 <div class="inner-aksi-container">
-                    <img src="assets/image/MembersihkanSolokan.jpeg"
-                        class="windowed-image">
+                    <img src="assets/image/MembersihkanSolokan.jpeg" class="windowed-image">
                     <h4>Membersihkan Saluran Air</h4>
-                    <p>Membersihkan saluran air melibatkan pengangkatan material yang menghalangi aliran air, seperti sampah, dedaunan, atau endapan lumpur</p>
+                    <p>Membersihkan saluran air melibatkan pengangkatan material yang menghalangi aliran air, seperti
+                        sampah, dedaunan, atau endapan lumpur</p>
                 </div>
 
                 <div class="inner-aksi-container">
-                    <img src="assets/image/BersihPantai.jpeg"
-                        class="windowed-image">
+                    <img src="assets/image/BersihPantai.jpeg" class="windowed-image">
                     <h4>Membersihkan Bibir Pantai</h4>
                     <p>Membersihkan pesisir pantai melibatkan upaya menghapus sampah dan limbah dari daerah pantai.</p>
                 </div>
 
                 <div class="inner-aksi-container">
-                    <img src="assets/image/Reboisasi.jpeg"
-                        class="windowed-image">
+                    <img src="assets/image/Reboisasi.jpeg" class="windowed-image">
                     <h4>Reboisasi</h4>
                     <p>Reboisasi merupakan upaya penanaman kembali hutan yang telah gundul</p>
                 </div>
@@ -276,7 +274,7 @@
                         Jl. Peduli Alam Selalu <br>
                         (Depan Pantai Indah Pamulang)
                     </p>
-                    
+
                     <p>
                         Tel. (123) 456-7890 <br>
                         Email: WorthNature@gmail.com
@@ -291,7 +289,7 @@
                     <a href="Aksi_kami.html">Gerakan Peduli Sesama</a> <br>
                 </div>
 
-                <div class="footer-content">
+                <div class="footer-content" id="social">
                     <h4>Ikuti Kami</h4>
                     <div class="footer-social">
                         <img src="assets/icon/tik-tok.png" alt="" srcset="">@WorthNature
@@ -320,6 +318,11 @@
                 counter = 1;
             }
         }, 5000);
+
+        function scrollFormulir() {
+            var konten = document.getElementById("social");
+            konten.scrollIntoView();
+        }
     </script>
 </body>
 
