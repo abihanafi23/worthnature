@@ -372,6 +372,16 @@ body {
     color: white;
 }
 
+.footer-social {
+    display: flex;
+    align-items: center;
+}
+
+.footer-social img {
+    height: 20px;
+    margin: 10px;
+}
+
 /* Responsive */
 @media only screen and (max-width:885px) {
     .container {
