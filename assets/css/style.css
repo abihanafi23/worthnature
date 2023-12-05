@@ -398,6 +398,14 @@ body {
         flex-wrap: wrap;
     }
 
+    .carousel-desc-text h3 {
+        font-size: 36px;
+    }
+
+    .mt-400px {
+        margin-top: -250px;
+    }
+
     .inner-brown-container {
         flex-wrap: wrap;
     }
@@ -408,5 +416,13 @@ body {
 
     .half-container hr {
         width: 100%;
+    }
+
+   .description-medium {
+        font-size: 18px;
+    }
+
+    .inner-aksi-container {
+        margin-inline: 5px;
     }
 }
