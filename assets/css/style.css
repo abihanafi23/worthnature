@@ -309,6 +309,7 @@ body {
 }
 
 .inner-aksi-container {
+    width: 30vw;
     margin-inline: 5%;
     text-align: center;
 }
