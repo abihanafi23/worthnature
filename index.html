@@ -18,17 +18,17 @@
         <div class="container-header">
             <div class="container-title">
                 <a href="">
-                    <img src="assets/icon/site-icon.png" alt="" srcset="">
-                    <h1 class="web-title">WorthNature</h1>
+                    <img src="assets/icon/site-icon.png" alt="" srcset="" id="img-header">
+                    <h1 class="web-title" id="title-header">WorthNature</h1>
                 </a>
             </div>
 
             <nav>
-                <a href="index.html">Beranda</a>
-                <a href="Aksi_kami.html">Aksi Kami</a>
-                <a href="Dampak.html">Dampak</a>
-                <a href="Donasi.html">Donasi</a>
-                <a href="Tentangkami.html">Tentang Kami</a>
+                <a id="nav1" href="index.html">Beranda</a>
+                <a id="nav2" href="Aksi_kami.html">Aksi Kami</a>
+                <a id="nav3" href="Dampak.html">Dampak</a>
+                <a id="nav4" href="Donasi.html">Donasi</a>
+                <a id="nav5" href="Tentangkami.html">Tentang Kami</a>
             </nav>
         </div>
     </div>
@@ -316,7 +316,24 @@
             counter++;
             if (counter > 3) {
                 counter = 1;
+            } else if (counter != 1 && counter != 2) {
+                document.getElementById('img-header').style.filter = 'invert(100%)';
+                document.getElementById('title-header').style.color = 'white';
+                document.getElementById('nav1').style.color = 'white';
+                document.getElementById('nav2').style.color = 'white';
+                document.getElementById('nav3').style.color = 'white';
+                document.getElementById('nav4').style.color = 'white';
+                document.getElementById('nav5').style.color = 'white';
+            } else {
+                document.getElementById('img-header').style.removeProperty('filter');
+                document.getElementById('title-header').style.removeProperty('color');
+                document.getElementById('nav1').style.removeProperty('color');
+                document.getElementById('nav2').style.removeProperty('color');
+                document.getElementById('nav3').style.removeProperty('color');
+                document.getElementById('nav4').style.removeProperty('color');
+                document.getElementById('nav5').style.removeProperty('color');
             }
+
         }, 5000);
 
         function scrollFormulir() {

@@ -34,7 +34,6 @@ body {
 }
 .about-section p{
     font-size: 20px;
-    color: #00000066656;
     margin-bottom: 35px;
 }
   html {
@@ -104,6 +103,9 @@ body {
   }
   .container {
     padding: 0 16px;
+  }
+  .container h2{
+    font-size: 25px;
   }
   .container::after, .row::after {
     content: "";
